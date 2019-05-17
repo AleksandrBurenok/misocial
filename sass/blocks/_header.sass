@@ -94,6 +94,22 @@
       transition: all .5s linear
     &:last-child
       margin-left: 90px
+.hamburger
+  width: 30px
+  height: 3px
+  background-color: $white
+  margin: 6px 0
+  transition: .2s ease
+  &-container
+    display: none
+    cursor: pointer
+.change
+  .hamburger-one
+    transform: rotate(-45deg) translate(-5px, 4px)
+  .hamburger-two
+    opacity: 0
+  .hamburger-three
+    transform: rotate(45deg) translate(-8px, -8px)
 @keyframes radial-pulse 
   0% 
     box-shadow: 0 0 0 0px rgba(204, 204, 223, 0.5) 
